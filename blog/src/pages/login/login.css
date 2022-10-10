@@ -1,0 +1,51 @@
+.login {
+  height: calc(100vh - 50px);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5)), url("https://cdn.pixabay.com/photo/2021/12/14/06/56/whale-6869763_1280.png");
+  background-size: cover;
+
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border:none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  border: none; 
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: teal;
+  color: white; 
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
