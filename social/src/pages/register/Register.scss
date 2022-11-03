@@ -1,0 +1,86 @@
+.register {
+  height: 100vh;
+  background-color: #58B2DC;
+  background-image: url("https://nipponcolors.com/images/texture.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 50%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 600px;
+    // TODO: 这一招能有效防止一些样式覆盖原本的样式边界
+    overflow: hidden;
+    .left {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+          outline: none;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          background-color: #006284;
+          &:active {
+            transform: scale(.98);
+          }
+          border-radius: 5px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      // TODO: 很有意思的背景配置
+      background: linear-gradient(rgba(88, 178, 220, .2), rgba(88, 178, 220, .2)), url("https://cdn.pixabay.com/photo/2022/08/08/13/59/cloud-of-bunch-of-7372799_1280.jpg");
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      p {}
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: rgba(255, 255, 255, .9);
+        color: #006284;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,22 @@
+$colors: (
+  "blue": #1919e6,
+  "red": #e61919,
+);
+
+@each $key, $val in $colors {  // 获取键值对
+  .text-#{$key} {
+    color: $val
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  @for $i from 1 through 9 {
+    .text-#{$key}-light-#{$i} {
+      color: mix(white, $val, $i * 10);
+    }
+    .bg-#{$key}-light-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+  }
+}
